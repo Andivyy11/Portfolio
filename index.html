@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnuRadha</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1 class="logo">
+            <span class="big">A</span><span class="small">nu</span><span class="big">R</span><span
+                class="small">adha</span>
+        </h1>
+        <ul class="nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#profiles">Profiles</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="menu">
+            <div class="fa-solid fa-bars" id="icon">
+                <!-- <i ></i> -->
+            </div>
+        </div>
+    </header>
+    <!-- heroPage -->
+    <section>
+        <div class="about">
+            <div class="bio">
+                <h1>I'm Anuradha</h1>
+                <p>Welcome to my portfolio! I'm a passionate web developer with a keen interest in creating seamless,
+                    user-friendly digital experiences. With a strong foundation in front-end and back-end development, I
+                    build websites that not only look great but also function flawlessly. Whether you're here to explore
+                    my work, collaborate on a project, I'm excited to showcase my journey in the world of web
+                    development.<br> Let's embark on a web adventure together!</p>
+            </div>
+            <div class="my_pic">
+                <img src="./images/Screenshot 2023-10-13 011806.png" alt="my_pic">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="mySkills">
+        </div>
+    </section>
+
+    <!-- Coding profiles -->
+    <section id="profiles">
+        <h1>Coding Profiles</h1>
+        <div class="profiles">
+            <div><a href="https://www.codingninjas.com/studio/profile/Andivyy"><img class="pro" src="./images/ninjas.jpg" alt="ninja" /></a><span class="tooltip">coding
+                    ninjas</span></div>
+            <div><a href="https://www.codechef.com/users/andivyy"><img class="pro" src="./images/chef.jpg" alt="chef" /></a><span
+                    class="tooltip">codeChef</span></div>
+            <div><a href="https://auth.geeksforgeeks.org/user/anuradhasingh0303/practice"><img class="pro" src="./images/geeksforgeeks.png" alt="gfg" /></a><span
+                    class="tooltip">geeksforgeeks</span></div>
+            <div><a href="#"><img class="pro" src="./images/leet.png" alt="leet" /></a><span class="tooltip">leetcode
+                    </spna>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Projects -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projectList">
+
+        </div>
+    </section>
+
+    <!-- Contact-->
+    <section id="contact">
+        <h1>Send Email</h1>
+        <form onsubmit="sendEmail()">
+            <input type="text" placeholder="Enter name" name="from_name">
+            <input type="email" placeholder="Enter e-mail" name="from_email"/>
+            <textarea placeholder="Type message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/anuradhasingh12/"><img src="images/linkedIn.png" alt="linkedin" /></a>
+            <a href="https://github.com/Andivyy11"><img src="images/github.png" alt="github" /></a>
+        </div>
+    </section>
+    <footer>
+        &copy; `${year}` Anuradha | All Rights Reserved
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        sendEmail = (e) => {
+            e.preventDefault();
+            emailjs.sendForm(process.env.service_id, process.env.temp_id, e.target,process.env.user_id)
+            .then((result) => {
+                alert('email sent successfully');
+            }, (error) => {
+                alert('error sending email');
+            });
+            //clears the form after sending the email
+            e.target.reset();
+        }
+    </script>
+
+</body>
+
+</html>
