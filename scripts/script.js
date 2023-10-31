@@ -41,7 +41,7 @@ var projects=[
       ["Snake Game", "HTML CSS JavaScript" ,"Classic snake game.", "https://github.com/Andivyy11/Sbake_game" ,"GitHub"],
       ["Tic Tac Toe", "HTML CSS JavaScript", "Player who places three of their marks in a horizontal, vertical, or diagonal wins.", "https://github.com/Andivyy11/TicTacToe", "GitHub"],
       ["Paint App","HTML CSS JavaScript", "A simple paint App, features- color palatte, eraser, brush width and save option","https://github.com/Andivyy11/canvas","GitHub"],
-      ["Calculator", "HTML CSS JavaScript" ,"Simple calculator with basic functionalities - add ,subtract ,modulo ,divide and multiply", "https://github.com/Andivyy11/calculator" ,"Github"],
+      ["Piano", "HTML CSS JavaScript" ,"A simple piano of seven notes and 5 chords", "https://github.com/Andivyy11/piano" ,"Github"],
       ["To-do List","HTML CSS React", "A to-do lsit with add , delete and clear options.","https://codesandbox.io/s/to-do-list-qt2wy9", "Codesanbox"],
       ["Calendar" ,"HTML SCC React" ,"A single page calendar, that displays date, year, month and day name.", "https://codesandbox.io/s/calender-482vnj", "Codesandbox"],
       ["Note Taking App", "HTML CSS React", "An app to take and delete notes.", "https://codesandbox.io/s/notes-keeper-jk8rnh", "Codesandbox"]
